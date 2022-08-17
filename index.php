@@ -7,7 +7,6 @@ include './include/main-slider.php';
 include './include/slider.php';
 include './include/about.php';
 include './include/trusted.php';
-include './include/servicesinc.php';
 include './include/study-abroad.php';
 include './include/countries.php';
 include './include/testimonial.php';

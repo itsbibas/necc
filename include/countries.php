@@ -5,17 +5,17 @@
 
             <div class="countries-text rev">
                 <h3>Study in</h3>
-                <h1>Canada</h1>
+                <h1>Australia</h1>
             </div>
-            <img class="image" src="assets/img/countries/canadawebp.webp" alt="">
+            <img class="image" src="assets/img/countries/australia.webp" alt="">
         </div>
         <div class="countries rev">
 
             <div class="countries-text rev">
                 <h3>Study in</h3>
-                <h1>New Zealand</h1>
+                <h1>Canada</h1>
             </div>
-            <img class="image" src="assets/img/countries/newzealand.webp" alt="">
+            <img class="image" src="assets/img/countries/canadawebp.webp" alt="">
         </div>
         <div class="countries rev">
 
@@ -48,9 +48,9 @@
 
             <div class="countries-text rev">
                 <h3>Study in</h3>
-                <h1>Australia</h1>
+                <h1>New Zealand</h1>
             </div>
-            <img class="image" src="assets/img/countries/australia.webp" alt="">
+            <img class="image" src="assets/img/countries/newzealand.webp" alt="">
         </div>
     </div>
 </div>

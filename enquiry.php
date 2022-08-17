@@ -147,10 +147,10 @@ include './include/section-flex.php';
                     </div>
 
 
-                    <div class="input-field">
+                    <!-- <div class="input-field">
                         <label>Expiry Date</label>
                         <input type="date" placeholder="Enter expiry date" required>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>

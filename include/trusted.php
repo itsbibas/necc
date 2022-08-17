@@ -4,7 +4,7 @@
         <p class="rev">We have a fully qualified and very well educated teaching staff, continuous student counseling, and a very effective and enthusiastic student support staff.</p> <br> <br>
 
         <div class="joinus-button rev">
-            <input type="submit" value="Join Us">
+            <a href="./enquiry"> <input type="submit" value="Join Us"></a>
         </div>
 
     </div>

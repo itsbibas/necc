@@ -1,6 +1,9 @@
 <div id="about-sec" class="about-section">
     <div class="video-section">
-        <iframe src="https://www.youtube.com/watch?v=8jF5RmI2YNU" frameborder="0"></iframe>
+        <!-- <iframe src="https://www.youtube.com/watch?v=8jF5RmI2YNU" frameborder="0"></iframe> -->
+        <img src="assets/img/necc-red.png" alt="">
+    </div>
+    <div class="photo-section">
 
     </div>
     <div class="text-section rev">

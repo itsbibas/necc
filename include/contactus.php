@@ -23,7 +23,7 @@
         <div class="right-side">
             <div class="topic-text">Send us a message</div>
             <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
-            <form action="https://formsubmit.co/kamal@neccedu.com" method="POST">
+            <form action="https://formsubmit.co/56d53a4b99a611ef27aa3ebfc8f98daf" method="POST">
                 <div class="input-box">
                     <input type="text" name="name" placeholder="Enter your name" required>
                 </div>

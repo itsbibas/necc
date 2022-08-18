@@ -23,7 +23,7 @@
         <div class="right-side">
             <div class="topic-text">Send us a message</div>
             <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
-            <form action="https://formsubmit.co/56d53a4b99a611ef27aa3ebfc8f98daf" method="POST">
+            <form action="emailProcess.php" method="POST">
                 <div class="input-box">
                     <input type="text" name="name" placeholder="Enter your name" required>
                 </div>
@@ -34,13 +34,24 @@
                     <textarea name="message" placeholder="Enter your message" required></textarea>
                 </div>
                 <div class="button-submit">
-                    <input type="submit" value="Send Now">
+                    <input type="submit" name="btn-send" value="Send Now">
                 </div>
             </form>
+            <?php
+
+            if (isset($_GET['success'])) {
+                $message = "Success";
+                echo '<span style="color: green; font-size:1em;" class="success"> ' . $message . ' </span>';
+            }
+            ?>
+
         </div>
     </div>
 </div>
 
+
+
+<!-- https://formsubmit.co/56d53a4b99a611ef27aa3ebfc8f98daf -->
 <style>
     .button-submit input[type="submit"] {
         outline: none;

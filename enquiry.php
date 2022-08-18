@@ -8,7 +8,12 @@ include './include/navbar.php';
 include './include/section-flex.php';
 ?>
 
-
+<?php
+if (isset($_GET['success'])) {
+    $message = "Success";
+    echo '<span style="color: green; font-size:1em;" class="success"> ' . $message . ' </span>';
+}
+?>
 <div class="container-2" style="margin: auto;">
     <header>Enquiry Form</header>
 
@@ -201,12 +206,7 @@ include './include/section-flex.php';
 
 
     </form>
-    <?php
-    if (isset($_GET['success'])) {
-        $message = "Success";
-        echo '<span style="color: green; font-size:1em;" class="success"> ' . $message . ' </span>';
-    }
-    ?>
+
 </div>
 
 

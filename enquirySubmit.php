@@ -11,13 +11,13 @@ if (isset($_POST['btn-send'])) {
     $country = "\r\n Country to Apply: " . $_POST['country'];
     $course = "\r\n Course to Study: " . $_POST['course'];
     $level = "\r\n Level: " . $_POST['level'];
-    $passedDate = "\r\n Passed Date : " . $_POST['passed-date'];
-    $faculty = "\r\n Faculty : " . $_POST['faculty'];
-    $grade = "\r\n Grade/Percentage : " . $_POST['grade'];
-    $school = "\r\n School/University : " . $_POST['school'];
-    $testStatus = "\r\n Previous English Proficiency Test Status : " . $_POST['test-status'];
-    $testType = "\r\n Test Type : " . $_POST['test-type'];
-    $score = "\r\n Obtained Score : " . $_POST['score'];
+    $passedDate = "\r\n Passed Date: " . $_POST['passed-date'];
+    $faculty = "\r\n Faculty: " . $_POST['faculty'];
+    $grade = "\r\n Grade/Percentage: " . $_POST['grade'];
+    $school = "\r\n School/University: " . $_POST['school'];
+    $testStatus = "\r\n Previous English Proficiency Test Status: " . $_POST['test-status'];
+    $testType = "\r\n Test Type: " . $_POST['test-type'];
+    $score = "\r\n Obtained Score: " . $_POST['score'];
 
     $mailheader = "From: " . $name . "<" . $email . ">\r\n";
 

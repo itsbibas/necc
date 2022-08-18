@@ -12,7 +12,7 @@ include './include/section-flex.php';
 <div class="container-2" style="margin: auto;">
     <header>Enquiry Form</header>
 
-    <form action="#">
+    <form action="enquirySubmit.php" method="POST">
         <div class="form first">
             <div class="details personal">
                 <span class="title">Personal Details</span>
@@ -20,27 +20,27 @@ include './include/section-flex.php';
                 <div class="fields">
                     <div class="input-field">
                         <label>Full Name</label>
-                        <input type="text" placeholder="Enter your name" required>
+                        <input type="text" name="full-name" placeholder="Enter your name" required>
                     </div>
 
                     <div class="input-field">
                         <label>Date of Birth</label>
-                        <input type="date" placeholder="Enter birth date" required>
+                        <input type="date" name="dob" placeholder="Enter birth date" required>
                     </div>
 
                     <div class="input-field">
                         <label>Email</label>
-                        <input type="text" placeholder="Enter your email" required>
+                        <input type="text" name="email" placeholder="Enter your email" required>
                     </div>
 
                     <div class="input-field">
                         <label>Mobile Number</label>
-                        <input type="number" placeholder="Enter mobile number" required>
+                        <input type="number" name="mobile-number" placeholder="Enter mobile number" required>
                     </div>
 
                     <div class="input-field">
                         <label>Gender</label>
-                        <select required>
+                        <select name="gender" required>
                             <option disabled selected>Select gender</option>
                             <option>Male</option>
                             <option>Female</option>
@@ -50,7 +50,7 @@ include './include/section-flex.php';
 
                     <div class="input-field">
                         <label>Visa Applied Before?</label>
-                        <select required>
+                        <select name="visa-status" required>
                             <option disabled selected>Select</option>
                             <option>Yes</option>
                             <option>No</option>
@@ -59,12 +59,12 @@ include './include/section-flex.php';
                     </div>
                     <div class="input-field">
                         <label>Family Contact Number</label>
-                        <input type="number" placeholder="Enter mobile number" required>
+                        <input type="number" name="family-contact" placeholder="Enter mobile number" required>
                     </div>
 
                     <div class="input-field">
                         <label>Country to apply visa</label>
-                        <select required>
+                        <select name="country" required>
                             <option disabled selected>Select country</option>
                             <option>Australia</option>
                             <option>USA</option>
@@ -78,7 +78,7 @@ include './include/section-flex.php';
 
                     <div class="input-field">
                         <label>Course you want to study</label>
-                        <select required>
+                        <select name="course" required>
                             <option disabled selected>Select course</option>
                             <option value="Architecture,Building and Planning">Architecture,Building and Planning</option>
                             <option value="Art and Design">Art and Design</option>
@@ -116,7 +116,7 @@ include './include/section-flex.php';
                 <div class="fields">
                     <div class="input-field">
                         <label>Level</label>
-                        <select required>
+                        <select name="level" required>
                             <option disabled selected>Select Level</option>
                             <option>SLC/SEE</option>
                             <option>+2</option>
@@ -128,22 +128,22 @@ include './include/section-flex.php';
 
                     <div class="input-field">
                         <label>Passed Date</label>
-                        <input type="date" placeholder="Enter your passed date" required>
+                        <input type="date" name="passed-date" placeholder="Enter your passed date" required>
                     </div>
 
                     <div class="input-field">
                         <label>Subject/Faculty</label>
-                        <input type="text" placeholder="Enter faculty" required>
+                        <input type="text" name="faculty" placeholder="Enter faculty" required>
                     </div>
 
                     <div class="input-field">
                         <label>Grade/Percentage</label>
-                        <input type="number" placeholder="Enter your grade/percentage" required>
+                        <input type="number" name="grade" placeholder="Enter your grade/percentage" required>
                     </div>
 
                     <div class="input-field">
                         <label>School/University Name</label>
-                        <input type="text" placeholder="Enter school/university" required>
+                        <input type="text" name="school" placeholder="Enter school/university" required>
                     </div>
 
 
@@ -161,7 +161,7 @@ include './include/section-flex.php';
                 <div class="fields">
                     <div class="input-field">
                         <label>Have you taken any English Proficiency test?</label>
-                        <select required>
+                        <select name="test-status" required>
                             <option disabled selected>Select</option>
                             <option>Yes</option>
                             <option>No</option>
@@ -171,7 +171,7 @@ include './include/section-flex.php';
 
                     <div class="input-field">
                         <label>Test type</label>
-                        <select required>
+                        <select name="test-type" required>
                             <option disabled selected>Select test type</option>
                             <option>IELTS</option>
                             <option>TOEFL</option>
@@ -185,7 +185,7 @@ include './include/section-flex.php';
 
                     <div class="input-field">
                         <label>Obtained Score Overall</label>
-                        <input type="text" placeholder="Enter overall score">
+                        <input type="text" name="score" placeholder="Enter overall score">
                     </div>
 
 
@@ -201,6 +201,10 @@ include './include/section-flex.php';
 
 
     </form>
+    if (isset($_GET['success'])) {
+    $message = "Success";
+    echo '<span style="color: green; font-size:1em;" class="success"> ' . $message . ' </span>';
+    }
 </div>
 
 

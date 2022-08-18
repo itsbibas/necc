@@ -193,7 +193,7 @@ include './include/section-flex.php';
 
             </div>
 
-            <button class="sumbit">
+            <button class="sumbit" name="btn-send">
                 <span class="btnText">Submit</span>
                 <i class="uil uil-navigator"></i>
             </button>
@@ -201,10 +201,12 @@ include './include/section-flex.php';
 
 
     </form>
+    <?php
     if (isset($_GET['success'])) {
-    $message = "Success";
-    echo '<span style="color: green; font-size:1em;" class="success"> ' . $message . ' </span>';
+        $message = "Success";
+        echo '<span style="color: green; font-size:1em;" class="success"> ' . $message . ' </span>';
     }
+    ?>
 </div>
 
 

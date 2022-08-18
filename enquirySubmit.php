@@ -25,8 +25,8 @@ if (isset($_POST['btn-send'])) {
 
     $recipient = "kamal@neccedu.com";
     if (mail($recipient, $subject, $finalmessage, $mailheader)) {
-        header("location:index.php?success");
+        header("location:enquiry.php?success");
     }
 } else {
-    header("location: index.php");
+    header("location: enquiry.php");
 }

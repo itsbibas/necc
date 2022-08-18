@@ -2,7 +2,7 @@
 if (isset($_POST['btn-send'])) {
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $subject = "Website contact us form fill notice";
+    $subject = "WEBSITE CONTACT US NOTICE";
     $message = $_POST['message'];
 
     $mailheader = "From: " . $name . "<" . $email . ">\r\n";

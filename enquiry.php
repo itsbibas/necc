@@ -8,13 +8,14 @@ include './include/navbar.php';
 include './include/section-flex.php';
 ?>
 
-<?php
-if (isset($_GET['success'])) {
-    $message = "Success";
-    echo '<span style="color: green; font-size:1em;" class="success"> ' . $message . ' </span>';
-}
-?>
+
 <div class="container-2" style="margin: auto;">
+    <?php
+    if (isset($_GET['success'])) {
+        $message = "Successfully Submitted";
+        echo '<div style=" width: 100%; text-align:center; color: green; font-size:1em;" class="success"> ' . $message . ' </div>';
+    }
+    ?>
     <header>Enquiry Form</header>
 
     <form action="enquirySubmit.php" method="POST">

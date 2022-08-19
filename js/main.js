@@ -37,7 +37,7 @@ window.addEventListener('scroll', () => {
     for (var i = 0; i < reveal.length; i++) {
         var windowheight = window.innerHeight;
         var revealtop = reveal[i].getBoundingClientRect().top;
-        var revealpoint = 250;
+        var revealpoint = 200;
 
         if (revealtop < windowheight - revealpoint)
             reveal[i].classList.add('rev-active');
